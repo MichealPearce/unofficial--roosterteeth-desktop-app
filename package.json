@@ -1,0 +1,17 @@
+{
+  "name": "rooterteeth-app",
+  "version": "1.0.0",
+  "description": "Destop application for roosterteeth.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Micheal Pearce",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "electron-prebuilt": "^1.4.13",
+    "shell": "^0.5.0"
+  },
+  "dependencies": {}
+}

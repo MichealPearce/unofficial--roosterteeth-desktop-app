@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Rooster Teeth</title>
+
+	<link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+	<link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+
+	<div class="title-bar">
+		<div class="controls">
+			<div id="close">
+				<i class="fas fa-times"></i>
+			</div>
+			<i id="min" class="fas fa-minus"></i>
+		</div>
+
+		<img src="assets/Roosterteeth.png" />
+	</div>
+
+	<div id="LoadingScreen" class="loading-screen">
+		<img src="assets/Roosterteeth.png" />
+		<label for="">Loading...</label>
+	</div>
+
+	<webview id="browser" src="https://roosterteeth.com/" useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36" plugins nodeintegration allowpopups webpreferences="nativeWindowOpen" ></webview>
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<!-- normal script imports etc  -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+	<script src="master.js"></script>
+
+	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+
+</body>
+</html>
