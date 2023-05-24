@@ -9,7 +9,7 @@
   "author": "Micheal Pearce",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^3.0.10",
+    "electron": "^18.3.7",
     "electron-prebuilt": "^1.4.13",
     "shell": "^0.5.0"
   },
